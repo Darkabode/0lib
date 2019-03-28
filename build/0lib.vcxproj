@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\code\async.c" />
+    <ClCompile Include="..\code\core.c" />
+    <ClCompile Include="..\code\crypto\aes.c" />
+    <ClCompile Include="..\code\crypto\arc4.c" />
+    <ClCompile Include="..\code\crypto\asn1parse.c" />
+    <ClCompile Include="..\code\crypto\asn1write.c" />
+    <ClCompile Include="..\code\crypto\base64.c" />
+    <ClCompile Include="..\code\crypto\bignum.c" />
+    <ClCompile Include="..\code\crypto\certs.c" />
+    <ClCompile Include="..\code\crypto\cipher.c" />
+    <ClCompile Include="..\code\crypto\cipher_wrap.c" />
+    <ClCompile Include="..\code\crypto\crc64.c" />
+    <ClCompile Include="..\code\crypto\ctr_drbg.c" />
+    <ClCompile Include="..\code\crypto\ecdh.c" />
+    <ClCompile Include="..\code\crypto\ecp.c" />
+    <ClCompile Include="..\code\crypto\ecp_curves.c" />
+    <ClCompile Include="..\code\crypto\entropy.c" />
+    <ClCompile Include="..\code\crypto\entropy_poll.c" />
+    <ClCompile Include="..\code\crypto\md.c" />
+    <ClCompile Include="..\code\crypto\md_wrap.c" />
+    <ClCompile Include="..\code\crypto\oid.c" />
+    <ClCompile Include="..\code\crypto\pem.c" />
+    <ClCompile Include="..\code\crypto\pk.c" />
+    <ClCompile Include="..\code\crypto\pkparse.c" />
+    <ClCompile Include="..\code\crypto\pkwrite.c" />
+    <ClCompile Include="..\code\crypto\pk_wrap.c" />
+    <ClCompile Include="..\code\crypto\rsa.c" />
+    <ClCompile Include="..\code\crypto\sha256.c" />
+    <ClCompile Include="..\code\crypto\sha512.c" />
+    <ClCompile Include="..\code\crypto\ssl_cache.c" />
+    <ClCompile Include="..\code\crypto\ssl_ciphersuites.c" />
+    <ClCompile Include="..\code\crypto\ssl_cli.c" />
+    <ClCompile Include="..\code\crypto\ssl_srv.c" />
+    <ClCompile Include="..\code\crypto\ssl_tls.c" />
+    <ClCompile Include="..\code\crypto\timing.c" />
+    <ClCompile Include="..\code\crypto\x509.c" />
+    <ClCompile Include="..\code\crypto\x509write_crt.c" />
+    <ClCompile Include="..\code\crypto\x509write_csr.c" />
+    <ClCompile Include="..\code\crypto\x509_create.c" />
+    <ClCompile Include="..\code\crypto\x509_crl.c" />
+    <ClCompile Include="..\code\crypto\x509_crt.c" />
+    <ClCompile Include="..\code\crypto\x509_csr.c" />
+    <ClCompile Include="..\code\dynfuncs.c" />
+    <ClCompile Include="..\code\error.c" />
+    <ClCompile Include="..\code\fs-event.c" />
+    <ClCompile Include="..\code\fs-poll.c" />
+    <ClCompile Include="..\code\fs.c" />
+    <ClCompile Include="..\code\gdidynfuncs.c" />
+    <ClCompile Include="..\code\getaddrinfo.c" />
+    <ClCompile Include="..\code\getnameinfo.c" />
+    <ClCompile Include="..\code\handle.c" />
+    <ClCompile Include="..\code\httpclient.c" />
+    <ClCompile Include="..\code\inet.c" />
+    <ClCompile Include="..\code\json.c" />
+    <ClCompile Include="..\code\localhook.c" />
+    <ClCompile Include="..\code\logger.c" />
+    <ClCompile Include="..\code\loop-watcher.c" />
+    <ClCompile Include="..\code\lzma.c" />
+    <ClCompile Include="..\code\memory.c" />
+    <ClCompile Include="..\code\native.c" />
+    <ClCompile Include="..\code\net.c" />
+    <ClCompile Include="..\code\pipe.c" />
+    <ClCompile Include="..\code\poll.c" />
+    <ClCompile Include="..\code\privilege.c" />
+    <ClCompile Include="..\code\process.c" />
+    <ClCompile Include="..\code\queue.c" />
+    <ClCompile Include="..\code\raw_disk.c" />
+    <ClCompile Include="..\code\req.c" />
+    <ClCompile Include="..\code\runtime.c" />
+    <ClCompile Include="..\code\stream.c" />
+    <ClCompile Include="..\code\string.c" />
+    <ClCompile Include="..\code\tcp.c" />
+    <ClCompile Include="..\code\thread.c" />
+    <ClCompile Include="..\code\threadpool.c" />
+    <ClCompile Include="..\code\timer.c" />
+    <ClCompile Include="..\code\udp.c" />
+    <ClCompile Include="..\code\util.c" />
+    <ClCompile Include="..\code\utils.c" />
+    <ClCompile Include="..\code\uv-common.c" />
+    <ClCompile Include="..\code\vector.c" />
+    <ClCompile Include="..\code\vfs\blockdev.c" />
+    <ClCompile Include="..\code\vfs\dir.c" />
+    <ClCompile Include="..\code\vfs\file.c" />
+    <ClCompile Include="..\code\vfs\format.c" />
+    <ClCompile Include="..\code\vfs\ioman.c" />
+    <ClCompile Include="..\code\vfs\vfs.c" />
+    <ClCompile Include="..\code\win32service.c" />
+    <ClCompile Include="..\code\win32stream.c" />
+    <ClCompile Include="..\code\winsock.c" />
+    <ClCompile Include="..\code\wmi.c" />
+    <ClCompile Include="..\code\zmodule.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\code\async.h" />
+    <ClInclude Include="..\code\crypto\aes.h" />
+    <ClInclude Include="..\code\crypto\arc4.h" />
+    <ClInclude Include="..\code\crypto\asn1.h" />
+    <ClInclude Include="..\code\crypto\asn1write.h" />
+    <ClInclude Include="..\code\crypto\base64.h" />
+    <ClInclude Include="..\code\crypto\bignum.h" />
+    <ClInclude Include="..\code\crypto\bn_mul.h" />
+    <ClInclude Include="..\code\crypto\certs.h" />
+    <ClInclude Include="..\code\crypto\check_config.h" />
+    <ClInclude Include="..\code\crypto\cipher.h" />
+    <ClInclude Include="..\code\crypto\cipher_wrap.h" />
+    <ClInclude Include="..\code\crypto\config.h" />
+    <ClInclude Include="..\code\crypto\crc64.h" />
+    <ClInclude Include="..\code\crypto\ctr_drbg.h" />
+    <ClInclude Include="..\code\crypto\ecdh.h" />
+    <ClInclude Include="..\code\crypto\ecp.h" />
+    <ClInclude Include="..\code\crypto\entropy.h" />
+    <ClInclude Include="..\code\crypto\entropy_poll.h" />
+    <ClInclude Include="..\code\crypto\md.h" />
+    <ClInclude Include="..\code\crypto\md_wrap.h" />
+    <ClInclude Include="..\code\crypto\oid.h" />
+    <ClInclude Include="..\code\crypto\pem.h" />
+    <ClInclude Include="..\code\crypto\pk.h" />
+    <ClInclude Include="..\code\crypto\pk_wrap.h" />
+    <ClInclude Include="..\code\crypto\rsa.h" />
+    <ClInclude Include="..\code\crypto\sha256.h" />
+    <ClInclude Include="..\code\crypto\sha512.h" />
+    <ClInclude Include="..\code\crypto\ssl.h" />
+    <ClInclude Include="..\code\crypto\ssl_cache.h" />
+    <ClInclude Include="..\code\crypto\ssl_ciphersuites.h" />
+    <ClInclude Include="..\code\crypto\timing.h" />
+    <ClInclude Include="..\code\crypto\x509.h" />
+    <ClInclude Include="..\code\crypto\x509_crl.h" />
+    <ClInclude Include="..\code\crypto\x509_crt.h" />
+    <ClInclude Include="..\code\crypto\x509_csr.h" />
+    <ClInclude Include="..\code\dynfuncs.h" />
+    <ClInclude Include="..\code\functions.h" />
+    <ClInclude Include="..\code\handle-inl.h" />
+    <ClInclude Include="..\code\havege.h" />
+    <ClInclude Include="..\code\hipses.h" />
+    <ClInclude Include="..\code\httpclient.h" />
+    <ClInclude Include="..\code\internal.h" />
+    <ClInclude Include="..\code\json.h" />
+    <ClInclude Include="..\code\localhook.h" />
+    <ClInclude Include="..\code\logger.h" />
+    <ClInclude Include="..\code\lzma.h" />
+    <ClInclude Include="..\code\memory.h" />
+    <ClInclude Include="..\code\native.h" />
+    <ClInclude Include="..\code\net.h" />
+    <ClInclude Include="..\code\ntdll.h" />
+    <ClInclude Include="..\code\platform.h" />
+    <ClInclude Include="..\code\privilege.h" />
+    <ClInclude Include="..\code\process.h" />
+    <ClInclude Include="..\code\queue.h" />
+    <ClInclude Include="..\code\raw_disk.h" />
+    <ClInclude Include="..\code\req-inl.h" />
+    <ClInclude Include="..\code\runtime.h" />
+    <ClInclude Include="..\code\string.h" />
+    <ClInclude Include="..\code\tree.h" />
+    <ClInclude Include="..\code\types.h" />
+    <ClInclude Include="..\code\utils.h" />
+    <ClInclude Include="..\code\uv-common.h" />
+    <ClInclude Include="..\code\uv-errno.h" />
+    <ClInclude Include="..\code\uv-threadpool.h" />
+    <ClInclude Include="..\code\vector.h" />
+    <ClInclude Include="..\code\vfs\blockdev.h" />
+    <ClInclude Include="..\code\vfs\dir.h" />
+    <ClInclude Include="..\code\vfs\file.h" />
+    <ClInclude Include="..\code\vfs\format.h" />
+    <ClInclude Include="..\code\vfs\ioman.h" />
+    <ClInclude Include="..\code\vfs\vfs.h" />
+    <ClInclude Include="..\code\win32service.h" />
+    <ClInclude Include="..\code\win32stream.h" />
+    <ClInclude Include="..\code\windows.h" />
+    <ClInclude Include="..\code\winsock.h" />
+    <ClInclude Include="..\code\wmi.h" />
+    <ClInclude Include="..\code\zmodule.h" />
+    <ClInclude Include="..\code\zmodule_defs.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0EE7E25B-47F0-4FEE-B6E0-6BB5CC414135}</ProjectGuid>
+    <RootNamespace>dropper32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>0lib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\bin\</OutDir>
+    <IntDir>..\bin\debug32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+    <IncludePath>c:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include;$(IncludePath)</IncludePath>
+    <TargetName>$(ProjectName)32d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\bin\</OutDir>
+    <IntDir>..\bin\release32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <IncludePath>c:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include;$(IncludePath)</IncludePath>
+    <TargetName>$(ProjectName)32</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <StringPooling>true</StringPooling>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
+      <BrowseInformation>true</BrowseInformation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <DisableSpecificWarnings>4005</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntdll32.lib;rpcrt4.lib;uuid32.lib;rehook32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\shared\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <NoEntryPoint>false</NoEntryPoint>
+      <SetChecksum>false</SetChecksum>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS</PreprocessorDefinitions>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>false</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <CallingConvention>StdCall</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <OmitDefaultLibName>true</OmitDefaultLibName>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <BrowseInformation>false</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>rpcrt4.lib;uuid32.lib;chkstk32.obj;ntdll32.lib;</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\shared\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <FunctionOrder />
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <SetChecksum>true</SetChecksum>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ModuleDefinitionFile>..\code\possessor.def</ModuleDefinitionFile>
+      <NoEntryPoint>false</NoEntryPoint>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
